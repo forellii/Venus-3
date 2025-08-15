@@ -212,17 +212,19 @@ main {
   background-color: #494949;
 }
 
-/*.fonte {
+.fonte {
   font-size: 1rem;
   color: rgb(218, 179, 255);
   text-decoration: none;
-  }
-  .chat {
-  font-size: 1rem;
-  color: rgb(218, 179, 255);
-  text-decoration: none;
-  }
-*/
+  margin-top: 20px;
+  text-shadow: #bb00ff 0px 0px 0px;
+  transition: text-shadow 0.5s ease;
+}
+
+.fonte:hover {
+  text-shadow: #50006d 0px 0px 30px;
+}
+
 @media (max-width: 600px) {
   body {
     padding: 0px;

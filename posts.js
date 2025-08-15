@@ -10,19 +10,11 @@ feedContainer.innerHTML = "";
 const noticias = [
   {
     'id': 'Teste',
-    'titulo': 'Temporada 2!',
-    'descricao': 'A temporada 2 de Venus Craft já esta disponível! Confira as novidades e atualizações que trazemos para você!',
-    'imagem': 'https://cdn.discordapp.com/attachments/1304474131290390549/1350498816050331679/image.png?ex=68a00248&is=689eb0c8&hm=4e2ae213863c1c772d905003fb5e5873bc14a81b3de8145f0e865573ada2a30b&g',
-    'fonte': '',
-    'detalhes': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
-  },
-  {
-    'id': 'Teste2',
-    'titulo': 'Temporada 3!',
-    'descricao': 'A temporada 3 de Venus Craft já esta disponível! Confira as novidades e atualizações que trazemos para você!',
-    'imagem': 'https://cdn.discordapp.com/attachments/1348280519967641652/1348290406600937513/dfg.png?ex=68a08b4a&is=689f39ca&hm=50a1cb688b80c343d67282ca93f22d2567346023141af502ac3a5863af268110&',
-    'fonte': '',
-    'detalhes': 'sexo sexo sexo sexo'
+    'titulo': 'Temporada 2...',
+    'descricao': 'Neste arquivo você pode reviver a nostalgia vendo nossa galeria de fotos de todos os momentos da Venus Craft até a temporada 2!',
+    'imagem': 'https://media.discordapp.net/attachments/1348280519967641652/1348290677598978119/imaaage.png?ex=68a08b8b&is=689f3a0b&hm=40d29eaf87032b9e0a0e26a846d7f86bf52650ad30090ffbad019f873d42b40d&=&format=webp&quality=lossless&width=1011&height=569',
+    'fonte': 'https://drive.google.com/drive/folders/1oXHv_Tzxyhkamur4rRVs6QC52rkc7R6x?usp=drive_link',
+    'detalhes': 'Reviva a nostalgia com esse link para o Drive, veja as estruturas e toda a história contruidas pelos players da Venus Craft de 18/01/2025 a 12/04/2025! (até coisas que não foram mostradas...:))'
   }
 ];
 
@@ -63,6 +55,15 @@ function criarPostagem(noticia) {
 
   img.addEventListener('click', abrirDetalhes);
   titulo.addEventListener('click', abrirDetalhes);
+
+  if (noticia.fonte && noticia.fonte.trim() !== "") {
+  const fonte = document.createElement('a');
+  fonte.className = 'fonte';
+  fonte.href = noticia.fonte;
+  fonte.textContent = 'Visitar';
+  fonte.target = '_blank';
+  conteudo.appendChild(fonte);
+}
 
   conteudo.appendChild(titulo);
   conteudo.appendChild(descricao);
