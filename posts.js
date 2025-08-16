@@ -53,7 +53,6 @@ function criarPostagem(noticia) {
     details.classList.add('aberto');
   }
 
-  img.addEventListener('click', abrirDetalhes);
   titulo.addEventListener('click', abrirDetalhes);
 
   if (noticia.fonte && noticia.fonte.trim() !== "") {

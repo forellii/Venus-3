@@ -13,7 +13,7 @@
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(to top, rgba(0, 0, 0, 1),rgb(0, 0, 0, 0.3)), url(../img/background1.png);
+  background: linear-gradient(to top, rgba(0, 0, 0, 1),rgb(0, 0, 0, 0.3)), url(../img/castle_entry.png);
   background-position: center;
   background-size: cover;
   padding: 0px;
