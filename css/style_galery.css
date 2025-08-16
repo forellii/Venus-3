@@ -1,0 +1,56 @@
+@import url('https://fonts.cdnfonts.com/css/pistoleer');
+@import url('https://fonts.cdnfonts.com/css/equali');
+@import url('https://fonts.cdnfonts.com/css/shameimaru-sans');
+@import url('https://fonts.cdnfonts.com/css/minecraft-title');
+@import url('https://fonts.cdnfonts.com/css/konkhmer-sleokchher');
+@import url('https://fonts.cdnfonts.com/css/minecraftia');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to top, rgba(0, 0, 0, 1),rgb(0, 0, 0, 0.3)), url(../img/castle_entry.png);
+  background-position: center;
+  background-size: cover;
+  padding: 0px;
+  overflow-y: hidden;
+  height: 100vh;
+}
+
+header {
+  position: relative;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: flexbox;
+  background-color: #000000;
+  height: 12vh;
+  border-bottom: rgb(59, 59, 59) solid 1px;
+  border-top: rgb(59, 59, 59) solid 1px;
+}
+
+header a {
+  text-decoration: none;
+  font-size: 4rem;
+  font-family: 'Minecraft Title', sans-serif;
+  color: #ffffff;
+  text-shadow: #50006d 1px 1px 40px;
+  letter-spacing: 2px;
+  font-weight: 700;
+  scale: 1;
+  transition: scale 0.3s ease, color 0.3s ease;
+}
+header a:hover {
+  scale: 1.1;
+  color: #ffffff;
+}
+
+header h1{
+  color: #ffffff;
+  margin: 25px;
+}

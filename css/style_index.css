@@ -13,10 +13,8 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    
     height: 100vh;
     scrollbar-width: none;
-
 }
 
 header {
@@ -59,14 +57,15 @@ header h1 {
     text-align: center;
     width: 100%;
     height: 100vh;
-    background: linear-gradient(to top, rgba(0, 0, 0, 1), rgb(0, 0, 0, 0.3)), url(../img/cherry_groove.png);
+    background: url(https://cdn.discordapp.com/attachments/1348280519967641652/1348281857309147218/2025-01-14_10.59.36.png?ex=68a1d4d4&is=68a08354&hm=8feebd21306d96a27ac7479728bc2d1cc3b4625ee3d1d73cded1dc0b8ee6fe71&);
     background-position: center;
     background-size: cover;
 }
 .content h1 {
     color: #ffffff;
     font-family: minecraftia, sans-serif;
-    animation: fade-in 2s forwards;
+    animation: fade-in 2s forwards, glow 2s forwards;
+
 }
 
 .content h1::before {
@@ -93,7 +92,7 @@ header h1 {
     margin-top: 40px;
     font-size: 2rem;
     font-family: 'Minecraft Title', sans-serif;
-    animation: jump 2s forwards;
+    animation: fade-in 1s ease forwards;
 }
 
 .venus {
@@ -101,12 +100,13 @@ header h1 {
     height: 300px;
     animation: fade-in 2s ease forwards;
 }
+
 .socials img{
     margin-top: 20px;
     height: 80px;
     width: 80px;
-    transition: scale 0.5s ease;
-    animation: jump 1s ease forwards;
+    transition: scale 0.2s ease;
+    animation: fade-in 1s ease forwards;
 }
 
 .socials img:hover{
@@ -124,8 +124,11 @@ header h1 {
     to {width: 650px;}
 }
 
-@keyframes jump {
-    from {transform: translateY(300px);}
-    to {transform: translateY(0);}
-    
+@keyframes glow {
+    from {
+        text-shadow: white 0 0 0px;
+    }
+    to {
+        text-shadow: 0 0 6px #ffffff;
+    }
 }

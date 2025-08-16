@@ -12,7 +12,7 @@ const noticias = [
     'id': 'Teste',
     'titulo': 'Temporada 2...',
     'descricao': 'Neste arquivo você pode reviver a nostalgia vendo nossa galeria de fotos de todos os momentos da Venus Craft até a temporada 2!',
-    'imagem': 'https://media.discordapp.net/attachments/1348280519967641652/1348285054991863880/2025-02-10_20.05.20.png?ex=68a0864f&is=689f34cf&hm=ad3da4c4954e9875f6767e50fae32eb270969cee23a61de486a6cbc5ca75c73c&=&format=webp&quality=lossless&width=1105&height=569',
+    'imagem': 'https://cdn.discordapp.com/attachments/1348280519967641652/1348281878192590950/2025-01-14_16.51.42.png?ex=68a1d4d9&is=68a08359&hm=c246fb4f223c982ba3dbf5ab663e8b66718ead65f55caee9e7746a4951559966&',
     'fonte': 'https://drive.google.com/drive/folders/1oXHv_Tzxyhkamur4rRVs6QC52rkc7R6x?usp=drive_link',
     'detalhes': 'Reviva a nostalgia com esse link para o Drive, veja as estruturas e toda a história contruidas pelos players da Venus Craft de 18/01/2025 a 12/04/2025! (até coisas que não foram mostradas...:))'
   }
