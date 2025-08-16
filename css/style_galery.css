@@ -13,12 +13,10 @@
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(to top, rgba(0, 0, 0, 1),rgb(0, 0, 0, 0.3)), url(../img/castle_entry.png);
-  background-position: center;
-  background-size: cover;
   padding: 0px;
-  overflow-y: hidden;
+  background-color: #000000;
   height: 100vh;
+  overflow: hidden;
 }
 
 header {
@@ -45,12 +43,162 @@ header a {
   scale: 1;
   transition: scale 0.3s ease, color 0.3s ease;
 }
+
 header a:hover {
   scale: 1.1;
   color: #ffffff;
 }
 
-header h1{
+header h1 {
   color: #ffffff;
   margin: 25px;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(234, 0, 255, 0.3)), url(../img/nightsky.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.slider {
+  width: 800px;
+  height: 700px;
+  margin: 0 auto;
+  overflow: hidden;
+  margin-top: 80px;
+}
+
+.slides {
+  display: flex;
+  width: 500px;
+  height: 800px;
+}
+
+.slides input {
+  display: none;
+}
+
+.slide {
+  position: relative;
+  transition: 0.8s ease;
+}
+
+.slide img {
+  width: 800px;
+  border-radius: 20px;
+  border-bottom: #ffffff 2px solid;
+  border-right: white 2px solid;
+  transition: box-shadow 0.3s ease;
+}
+
+.slide img:hover {
+  box-shadow: #50006d 0px 0px 20px;
+}
+
+.manual-nav {
+  position: absolute;
+  width: 800px;
+  margin-top: 420px;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn {
+  border: 2px solid #ffffff;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.manual-btn:not(:last-child) {
+  margin-right: 40px;
+}
+
+.manual-btn:hover {
+  background: #ffffff;
+}
+
+#radio1:checked ~ .first {
+  margin-left: 0;
+}
+#radio2:checked ~ .first {
+  margin-left: -160%;
+}
+#radio3:checked ~ .first {
+  margin-left: -320%;
+}
+#radio4:checked ~ .first {
+  margin-left: -480%;
+}
+#radio5:checked ~ .first {
+  margin-left: -640%;
+}
+#radio6:checked ~ .first {
+  margin-left: -800%;
+}
+#radio7:checked ~ .first {
+  margin-left: -960%;
+}
+#radio8:checked ~ .first {
+  margin-left: -1120%;
+}
+#radio9:checked ~ .first {
+  margin-left: -1280%;
+}
+#radio10:checked ~ .first {
+  margin-left: -1440%;
+}
+#radio11:checked ~ .first {
+  margin-left: -1600%;
+}
+#radio12:checked ~ .first {
+  margin-left: -1760%;
+}
+
+.content h1{
+  color: #ffffff;
+  text-align: left;
+  font-size: 2rem;
+  font-family: 'Minecraft Title', sans-serif;
+  text-shadow: #000000 2px 2px 1px;
+  margin-top: 0px;
+
+}
+
+.content h2{
+  color: #ffee00;
+  text-align: left;
+  font-size: 2rem;
+  font-family: 'Minecraft Title', sans-serif;
+  text-shadow: #000000 2px 2px 1px;
+  text-shadow: #ffee0067 1px 1px 2px;
+
+}
+.content p{
+  color: #fffac9;
+  text-align: left;
+  font-size: 1.2rem;
+  font-family: 'minecraftia', sans-serif;
+  font-style: italic;
+  text-shadow: #000000 2px 2px 1px;
+  text-shadow: #e100ff 1px 1px 10px;
+
+  border-bottom: #ffffff 2px solid;
+}
+
+.content{
+  border-top: #ffffff 2px solid;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  padding-bottom: 0px;
+  margin-left: 40px;
+  margin-top: -300px;
+  flex-direction: column;
 }
