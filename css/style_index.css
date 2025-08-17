@@ -148,6 +148,9 @@ header h1 {
         text-shadow: 0 0 6px #ffffff;
     }
 }
+.header-mobile {
+    display: none;
+}
 
 @media (max-width: 768px) {
     header .desktop {
@@ -212,7 +215,7 @@ header h1 {
     }
     
     body {
-        height: 100%;
+        height: 100vh;
         overflow: hidden;
  
     }
