@@ -57,7 +57,7 @@ header h1 {
     text-align: center;
     width: 100%;
     height: 100vh;
-    background: url(https://cdn.discordapp.com/attachments/1348280519967641652/1348281857309147218/2025-01-14_10.59.36.png?ex=68a1d4d4&is=68a08354&hm=8feebd21306d96a27ac7479728bc2d1cc3b4625ee3d1d73cded1dc0b8ee6fe71&);
+    background: url(../img/galery/2025-02-05_16.50.12.png);
     background-position: center;
     background-size: cover;
 }
@@ -150,7 +150,7 @@ header h1 {
 }
 
 @media (max-width: 768px) {
-    .desktop {
+    header .desktop {
         display: none;
     }
 
@@ -187,7 +187,7 @@ header h1 {
         position: absolute;
         text-align: right;
         right: -100%;
-        top: 100%;
+        top: 10%;
         transition: 0.5s;
         z-index: 2;
         border-bottom-left-radius: 10px;
@@ -203,9 +203,6 @@ header h1 {
     #menu.open {
         right: 0%;
     }
-    #menu.close {
-        right: -100%;
-    }
 
     .main {
         display: flex;
@@ -217,7 +214,7 @@ header h1 {
     body {
         height: 100%;
         overflow: hidden;
-        touch-action: none;
+ 
     }
     header {
         height: 10vh;
