@@ -115,9 +115,12 @@ header h1 {
     scale: 1.1;
 }
 
-.header-mobile {
+@media (min-width: 768px) {
+    .header-mobile {
     display: none;
 }
+}
+
 
 @keyframes fade-in {
     from {
