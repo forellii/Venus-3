@@ -9,7 +9,15 @@ feedContainer.innerHTML = "";
 // Cria post sem interação
 const noticias = [
   {
-    'id': 'Teste',
+    'id': '???',
+    'titulo': '...',
+    'descricao': '!!!',
+    'imagem': 'https://cdn.discordapp.com/attachments/1353066159720759327/1406433143447224340/image.png?ex=68a31b2f&is=68a1c9af&hm=3db81292822fc87ffc41c6b24824e140f2cf642af71a507aefb0e131ddb0a1b6&',
+    'fonte': '',
+    'detalhes': 'Error: 00110011 -------------contact the server administrator'
+  },
+  {
+    'id': 'temporada-2',
     'titulo': 'Temporada 2...',
     'descricao': 'Neste arquivo você pode reviver a nostalgia vendo nossa galeria de fotos de todos os momentos da Venus Craft até a temporada 2!',
     'imagem': 'https://cdn.discordapp.com/attachments/1348280519967641652/1348281878192590950/2025-01-14_16.51.42.png?ex=68a1d4d9&is=68a08359&hm=c246fb4f223c982ba3dbf5ab663e8b66718ead65f55caee9e7746a4951559966&',
