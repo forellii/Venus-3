@@ -308,7 +308,7 @@ main {
 
   .content {
     position: absolute;
-    top: 45%;
+    top: 50%;
     margin-left: -10px;
     justify-content: center;
   }
