@@ -462,7 +462,7 @@ header h1 {
   display: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
 
   html,
   body {
