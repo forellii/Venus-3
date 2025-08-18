@@ -13,7 +13,7 @@
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(to top, rgba(0, 0, 0, 1),rgb(0, 0, 0, 0.3)), url(../img/castle_entry.png);
+  background: linear-gradient(to top, rgba(0, 0, 0, 1), rgb(0, 0, 0, 0.3)), url(../img/castle_entry.png);
   background-position: center;
   background-size: cover;
   padding: 0px;
@@ -45,12 +45,13 @@ header a {
   scale: 1;
   transition: scale 0.3s ease, color 0.3s ease;
 }
+
 header a:hover {
   scale: 1.1;
   color: #ffffff;
 }
 
-header h1{
+header h1 {
   color: #ffffff;
   margin: 25px;
 }
@@ -195,7 +196,7 @@ main {
   right: 0;
 }
 
-#close{
+#close {
   margin-top: 20px;
   background-color: #333333;
   padding: 6px 20px;
@@ -232,11 +233,14 @@ main {
 }
 
 @media (max-width: 768px) {
-  html, body {
+
+  html,
+  body {
     max-width: 100%;
+    overscroll-behavior-y: auto;
   }
-  
-  *{
+
+  * {
     scrollbar-width: none;
   }
 
@@ -254,7 +258,9 @@ main {
     background-color: #000000;
     border-bottom: rgb(59, 59, 59) solid 1px;
   }
-  .main { /*O texto da pagina atual no header mobile*/
+
+  .main {
+    /*O texto da pagina atual no header mobile*/
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -263,6 +269,7 @@ main {
     font-size: 3.4rem;
     margin-right: -100px;
   }
+
   #btn-open {
     width: 30px;
     height: 30px;
@@ -304,6 +311,7 @@ main {
     transform: translate(60%, 80%);
     z-index: 10;
   }
+
   main {
     height: 100vh;
     overflow-y: auto;
@@ -317,7 +325,8 @@ main {
     margin-bottom: 50px;
     height: auto;
   }
-  #details{
+
+  #details {
     width: 100%;
     max-width: 800px;
     right: -1000px;
@@ -329,6 +338,7 @@ main {
     z-index: 5;
     border: #ffffff5d solid 1px;
   }
+
   #details::before {
     content: '';
     position: absolute;
@@ -339,20 +349,39 @@ main {
     backdrop-filter: blur(20px);
     z-index: -1;
   }
+
   #details.aberto {
-  transform: translate(0%, 20%);
+    transform: translate(0%, 20%);
   }
+
   #details p {
     font-size: 1.2rem;
     margin-left: 5px;
   }
+
   #details h1 {
     font-size: 2.2rem;
   }
-  .descricao{
+
+  .descricao {
     font-size: 0.8rem;
     width: 80%;
     transform: translate(12.5%, 0%);
+  }
+
+  .pull-to-refresh {
+    position: fixed;
+    top: -50px;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: top 0.7s ease-in-out;
+  }
+
+  .pull-to-refresh.visible {
+    top: 0;
   }
 
 }
