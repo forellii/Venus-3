@@ -224,6 +224,7 @@ main {
   *{
     touch-action: none;
     overscroll-behavior-x: none;
+    scrollbar-width: none;
   }
 
   header .desktop {

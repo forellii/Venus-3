@@ -153,6 +153,11 @@ header h1 {
 }
 
 @media (max-width: 768px) {
+    *{
+    touch-action: none;
+    overscroll-behavior-x: none;
+    scrollbar-width: none;
+    }
     header .desktop {
         display: none;
     }
