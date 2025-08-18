@@ -223,6 +223,7 @@ main {
 @media (max-width: 768px) {
   *{
     touch-action: none;
+    overscroll-behavior-x: none;
   }
 
   header .desktop {
