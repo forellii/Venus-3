@@ -14,6 +14,7 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     height: 100vh;
+    background-color: #000000;
     scrollbar-width: none;
 }
 
@@ -57,7 +58,7 @@ header h1 {
     text-align: center;
     width: 100%;
     height: 100vh;
-    background: url(../img/galery/2025-02-05_16.50.12.png);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)), url(../img/galery/2025-02-05_16.50.12.png);
     background-position: center;
     background-size: cover;
 }
@@ -115,9 +116,30 @@ header h1 {
     scale: 1.1;
 }
 
-.header-mobile {
-    display: none;
+#status-box {
+    animation: fade-in 2s ease forwards;
+    text-shadow: #000000 2px 2px 1px;
+    background-color: rgba(26, 26, 26, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transform: translate(240%, 0);
+    width: 260px;
+    height: 100px;
+    margin-top: 24px;
+    border-radius: 5px;
 }
+#status{
+    color: #ffffff;
+    font-family: 'Minecraft Title', sans-serif;
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+#status.failed{
+    color: rgb(255, 174, 0);
+}
+
+
+
 
 @keyframes fade-in {
     from {
