@@ -221,6 +221,10 @@ main {
 }
 
 @media (max-width: 768px) {
+  *{
+    touch-action: none;
+  }
+
   header .desktop {
     display: none;
   }
