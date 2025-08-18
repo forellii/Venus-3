@@ -1,5 +1,5 @@
 function atualizarStatus() {
-  fetch("https://api.mcsrvstat.us/2/mc.venuscraft.com")
+  fetch("https://api.mcsrvstat.us/2/br-ultra-5.enxadahost.com:10006")
     .then(res => res.json())
     .then(data => {
       let status = document.getElementById("status");
