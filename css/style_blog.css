@@ -161,7 +161,7 @@ main {
   position: fixed;
   top: 0;
   text-align: left;
-  right: -0px;
+  right: -1000px;
   background-color: #110014;
   width: 800px;
   height: 100%;
