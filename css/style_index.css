@@ -260,7 +260,9 @@ header h1 {
     }
 
     .content p {
-        font-size: 0.6rem;
+        font-size: 0.8rem;
+        width: 73%;
+        transform: translateX(19%);
     }
 
     .content h2 {
