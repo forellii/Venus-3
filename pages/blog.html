@@ -18,13 +18,24 @@
 
 <body>
   <header>
-    <a href="../index" style="font-size: 2rem; color: rgb(201, 201, 201);">inicio</a>
-    <h1>|ㅤ</h1>
-    <a href="galery"style="font-size: 2rem; color: rgb(201, 201, 201);">galeria</a>
-    <h1>|ㅤ</h1>
-    <a href="">Postagens</a>
-    <h1>|</h1>
-    <a href="about" style="font-size: 2rem; color: rgb(201, 201, 201);">sobre</a>
+    <div class="desktop">
+      <a href="../index"style="font-size: 2rem; color: rgb(201, 201, 201);">Inicio</a>
+      <h1>|ㅤ</h1>
+      <a href="">galeria</a>
+      <h1>|ㅤ</h1>
+      <a href="blog" style="font-size: 2rem; color: rgb(201, 201, 201);">postagens</a>
+      <h1>|</h1>
+      <a href="about" style="font-size: 2rem; color: rgb(201, 201, 201);">sobre</a>
+    </div>
+    <div class="header-mobile">
+      <a class="main" href="">Postagens</a>
+      <button id="btn-open">☰</button>
+      <aside id="menu">
+        <a href="../index">Inicio</a>
+        <a href="galery">Galeria</a>
+        <a href="about">Sobre</a>
+      </aside>
+    </div>
   </header>
   <main id="feed-container">
     <div class="postagem">
