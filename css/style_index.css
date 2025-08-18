@@ -56,12 +56,12 @@ header h1 {
 .container {
     justify-content: center;
     text-align: center;
-    width: 100%;
     height: 100vh;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)), url(../img/galery/2025-02-05_16.50.12.png);
     background-position: center;
     background-size: cover;
 }
+
 
 .content h1 {
     color: #ffffff;
@@ -92,7 +92,7 @@ header h1 {
     color: #ffffff;
     border-bottom: #ffffff 1px solid;
     display: inline-block;
-    margin-top: 40px;
+    margin-top: 20px;
     font-size: 2rem;
     font-family: 'Minecraft Title', sans-serif;
     animation: fade-in 1s ease forwards;
@@ -101,6 +101,7 @@ header h1 {
 .venus {
     width: 300px;
     height: 300px;
+     margin-top: 30px;
     animation: fade-in 2s ease forwards;
 }
 
@@ -116,29 +117,14 @@ header h1 {
     scale: 1.1;
 }
 
-#status-box {
-    animation: fade-in 2s ease forwards;
-    text-shadow: #000000 2px 2px 1px;
-    background-color: rgba(26, 26, 26, 0.6);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    transform: translate(240%, 0);
-    width: 260px;
-    height: 100px;
-    margin-top: 24px;
-    border-radius: 5px;
-}
 #status{
     color: #ffffff;
     font-family: 'Minecraft Title', sans-serif;
+    background-color: rgba(26, 26, 26, 0.6);
     font-size: 1.5rem;
-    margin-top: 20px;
+    top: 100px;
+    position: absolute;
 }
-
-#status.failed{
-    color: rgb(255, 174, 0);
-}
-
-
 
 
 @keyframes fade-in {
@@ -177,7 +163,6 @@ header h1 {
 
 @media (max-width: 768px) {
     * {
-        touch-action: none;
         overscroll-behavior-x: none;
         scrollbar-width: none;
     }
@@ -289,5 +274,8 @@ header h1 {
 
     .content h2 {
         font-size: 1.5rem;
+    }
+    #status{
+        
     }
 }
