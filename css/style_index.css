@@ -148,16 +148,18 @@ header h1 {
         text-shadow: 0 0 6px #ffffff;
     }
 }
+
 .header-mobile {
     display: none;
 }
 
 @media (max-width: 768px) {
-    *{
-    touch-action: none;
-    overscroll-behavior-x: none;
-    scrollbar-width: none;
+    * {
+        touch-action: none;
+        overscroll-behavior-x: none;
+        scrollbar-width: none;
     }
+
     header .desktop {
         display: none;
     }
@@ -171,45 +173,46 @@ header h1 {
         background-color: #000000;
         border-bottom: rgb(59, 59, 59) solid 1px;
     }
+
     #btn-open {
         width: 30px;
         height: 30px;
-        background-color: #333333;
+        background: none;
         border: none;
         color: #ffffff;
         border-radius: 4px;
-        font-size: 1rem;
-        position: absolute;
-        right: 20px;
-        top: 35px;
+        font-size: 2rem;
+        transform: translateY(-22px);
+        padding: 20px 10px;
         cursor: pointer;
     }
 
     #menu {
         display: flex;
+        position: fixed;
         flex-direction: column;
         align-items: right;
         justify-content: right;
         background-color: #000000;
         border: 1px solid rgba(255, 255, 255, 0.164);
-        position: absolute;
+        transform: translate(300%, 85%);
         text-align: right;
-        right: -100%;
-        top: 10%;
         transition: 0.5s;
+        padding: 10px 30px;
         z-index: 2;
         border-bottom-left-radius: 10px;
     }
+
     #menu a {
         text-decoration: none;
         color: #ffffff;
         border-bottom: rgba(255, 255, 255, 0.164) 1px solid;
         font-size: 1.7rem;
-        padding: 10px 20px;
         transition: color 0.3s ease;
     }
+
     #menu.open {
-        right: 0%;
+        transform: translate(40%, 85%);
     }
 
     .main {
@@ -217,13 +220,15 @@ header h1 {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        transform: translateX(20%) scale(0.8);
     }
-    
+
     body {
         height: 100vh;
         overflow: hidden;
- 
+
     }
+
     header {
         height: 10vh;
     }
@@ -245,14 +250,14 @@ header h1 {
     }
 
     @keyframes esticar-mobile {
-    from {
-        width: 0px;
-    }
+        from {
+            width: 0px;
+        }
 
-    to {
-        width: 320px;
+        to {
+            width: 320px;
+        }
     }
-}
 
     .content p {
         font-size: 0.6rem;
