@@ -10,11 +10,11 @@ feedContainer.innerHTML = "";
 const noticias = [
   {
     'id': '???',
-    'titulo': '...',
-    'descricao': '!!!',
+    'titulo': '/3',
+    'descricao': '/3',
     'imagem': '../img/posts/rockets3.png',
     'fonte': '',
-    'detalhes': 'Error: 00110011 -------------contact the server administrator'
+    'detalhes': '/3'
   },
   {
     'id': 'temporada-2',
