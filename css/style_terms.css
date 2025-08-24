@@ -171,9 +171,6 @@ main {
         transform: translateX(20%) scale(0.8);
     }
 
-    body {
-    }
-
     header {
         height: 10vh;
     }
