@@ -14,7 +14,7 @@ const noticias = [
     'descricao': '/3',
     'imagem': 'https://cdn.discordapp.com/attachments/1163177037272465449/1409179682032713759/10_Sem_Titulo_20250824111557.png?ex=68ac7059&is=68ab1ed9&hm=72d39ed8b089ac730818b58203b4230a6cbf9a89646e7e59693bed912a227e53&',
     'fonte': '',
-    'detalhes': '/3'
+    'detalhes': 'pages/3'
   },
   {
     'id': 'temporada-2',
