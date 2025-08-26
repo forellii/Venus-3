@@ -16,6 +16,7 @@ body {
     height: 100vh;
     background-color: #000000;
     scrollbar-width: none;
+    overflow-x: hidden;
 }
 
 header .desktop {
@@ -53,21 +54,39 @@ header h1 {
     margin: 25px;
 }
 
-.container {
-    justify-content: center;
-    text-align: center;
+main {
+    width: 100%;
     height: 100vh;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)), url(../img/galery/2025-02-05_16.50.12.png);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)), url(../img/background.png);
     background-position: center;
     background-size: cover;
 }
 
+.container {
+    justify-content: center;
+    right: -300px;
+    text-align: center;
+    display: flex;
+    width: 100%;
+    position: absolute;
+    height: 100vh;
+}
 
 .content h1 {
-    color: #ffffff;
+    color: #ffe600;
     font-family: minecraftia, sans-serif;
     animation: fade-in 2s forwards, glow 2s forwards;
-    text-shadow: #000000 2px 2px 1px;
+    text-shadow: #ffe600 2px 2px 1px;
+}
+
+.content a {
+    margin-top: 30px;
+    color: #ffffff;
+    font-size: 2rem;
+    text-decoration: none;
+    font-family: Minecraft title, sans-serif;
+    animation: fade-in 2s forwards, glow 2s forwards;
+    text-shadow: #ff0095 2px 2px 1px;
 }
 
 .content h1::before {
@@ -101,7 +120,7 @@ header h1 {
 .venus {
     width: 300px;
     height: 300px;
-    margin-top: -80px;
+    margin-top: 40px;
     animation: fade-in 2s ease forwards;
 }
 
@@ -117,7 +136,7 @@ header h1 {
     scale: 1.1;
 }
 
-#status{
+#status {
     color: #ffffff;
     font-family: 'Minecraft Title', sans-serif;
     background-color: rgba(26, 26, 26, 0.6);
@@ -126,6 +145,26 @@ header h1 {
     position: absolute;
 }
 
+.ct {
+    font-family: minecraft title, sans-serif;
+    font-size: 3.5rem;
+    color: white;
+    text-decoration: none;
+    text-shadow: #ffffff 0px 0px 0px;
+    animation: bright 1s ease infinite;
+}
+
+@keyframes bright {
+    0% {
+        text-shadow: #ffffff 0px 0px 0px;
+    }
+
+    50% {
+        text-shadow: #ffffff 0px 0px 10px;
+    }
+
+
+}
 
 @keyframes fade-in {
     from {
@@ -143,7 +182,7 @@ header h1 {
     }
 
     to {
-        width: 650px;
+        width: 310px;
     }
 }
 
@@ -166,6 +205,12 @@ header h1 {
         overscroll-behavior-x: none;
         scrollbar-width: none;
     }
+
+
+    .container-2 {
+        display: none;
+    }
+
 
     header .desktop {
         display: none;
@@ -202,7 +247,7 @@ header h1 {
         justify-content: right;
         background-color: #000000;
         border: 1px solid rgba(255, 255, 255, 0.164);
-        transform: translate(300%, 85%);
+        transform: translate(300%, 75%);
         text-align: right;
         transition: 0.5s;
         padding: 10px 30px;
@@ -219,10 +264,11 @@ header h1 {
     }
 
     #menu.open {
-        transform: translate(40%, 85%);
+        transform: translate(35%, 75%);
     }
 
-    .main { /*O texto da pagina atual no header mobile*/
+    .main {
+        /*O texto da pagina atual no header mobile*/
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -245,7 +291,12 @@ header h1 {
     }
 
     .container {
-        height: 100vh;
+        max-height: 100vh;
+        right: 0px;
+    }
+
+    iframe {
+        width: 90%;
     }
 
     .content h1 {

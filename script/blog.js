@@ -9,6 +9,14 @@ feedContainer.innerHTML = "";
 // Cria post sem interação
 const noticias = [
   {
+    'id': 'venusteaser',
+    'titulo': 'Venus Craft 3 | Teaser',
+    'descricao': 'Veja o teaser da Venus Craft já disponivel no YouTube!',
+    'imagem': '../img/thumbs/thumb1.png',
+    'fonte': 'https://youtu.be/aZM8YaY7xag',
+    'detalhes': 'Veja o teaser da Venus Craft já disponivel no YouTube!'
+  },
+  {
     'id': '???',
     'titulo': '/3',
     'descricao': '/3',
