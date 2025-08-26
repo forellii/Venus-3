@@ -150,17 +150,17 @@ main {
     font-size: 3.5rem;
     color: white;
     text-decoration: none;
-    text-shadow: #ffffff 0px 0px 0px;
+    text-shadow: #ff0000 0px 0px 0px;
     animation: bright 1s ease infinite;
 }
 
 @keyframes bright {
     0% {
-        text-shadow: #ffffff 0px 0px 0px;
+        text-shadow: #ff0000 0px 0px 0px;
     }
 
     50% {
-        text-shadow: #ffffff 0px 0px 10px;
+        text-shadow: #ff0000 0px 0px 40px;
     }
 
 
