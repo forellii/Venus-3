@@ -108,13 +108,15 @@ main {
 }
 
 .content h2 {
-    color: #ffffff;
-    border-bottom: #ffffff 1px solid;
+    color: #7289da;
+    border-bottom: #7289da 1px solid;
     display: inline-block;
     margin-top: 20px;
     font-size: 2rem;
     font-family: 'Minecraft Title', sans-serif;
-    animation: fade-in 1s ease forwards;
+    animation: fade-in 1s ease forwards, glow 2s ease infinite;
+ ;
+
 }
 
 .venus {
@@ -154,6 +156,22 @@ main {
     animation: bright 1s ease infinite;
 }
 
+
+#tiktok {
+    transition: 0.2s;
+    scale: 0.6;
+}
+#youtube{ 
+    transition: 0.2s;
+    scale: 0.6;
+}
+#youtube:hover{
+    scale: 1;
+}
+#tiktok:hover{
+    scale: 1;
+}
+
 @keyframes bright {
     0% {
         text-shadow: #ff0000 0px 0px 0px;
@@ -187,12 +205,12 @@ main {
 }
 
 @keyframes glow {
-    from {
-        text-shadow: white 0 0 0px;
+    0% {
+        text-shadow: #7289da 0 0 0px;
     }
 
-    to {
-        text-shadow: 0 0 6px #ffffff;
+    50% {
+        text-shadow: 0 0 6px #7289da;
     }
 }
 
@@ -325,5 +343,9 @@ main {
 
     .content h2 {
         font-size: 1.5rem;
+    }
+    .ct{
+        color: #ff0000;
+        animation: bright 1s ease infinite;
     }
 }
