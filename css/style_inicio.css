@@ -71,6 +71,11 @@ main {
     position: absolute;
     height: 100vh;
 }
+.container h3 {
+    margin-top: -75px;
+    border-radius: 20px;
+    padding: 10px 30px;
+}
 
 .content h1 {
     color: #ffe600;

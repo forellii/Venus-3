@@ -32,7 +32,7 @@ function atualizarStatus() {
         let players = data.players.online;
         let max = data.players.max;
         let version = data.version.name_raw;
-        status.innerHTML = `🟢 Online - ${players}/${max} jogadores`;
+        status.innerHTML = `Online - ${players}/${max} jogadores`;
       } else {
         status.innerHTML = "Servidor Offline";
       }
