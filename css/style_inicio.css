@@ -81,7 +81,7 @@ main {
     color: #ffe600;
     font-family: minecraftia, sans-serif;
     animation: fade-in 2s forwards, glow 2s forwards;
-    text-shadow: #ffe600 2px 2px 1px;
+    text-shadow: #ffe600 1px 1px 10px;
 }
 
 .content a {
