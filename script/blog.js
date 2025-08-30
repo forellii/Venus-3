@@ -9,6 +9,14 @@ feedContainer.innerHTML = "";
 // Cria post sem interação
 const noticias = [
   {
+    'id': 'venustrailer',
+    'titulo': 'Venus Craft | Temporada 3!',
+    'descricao': 'Assista ao maravilhoso trailer da Venus Craft! aproveite e ajude o canal!',
+    'imagem': '../img/thumbs/thumb2.png',
+    'fonte': 'https://youtu.be/QSiX0oOdKsA?si=YcJcglNiyIjrcEtC',
+    'detalhes': 'Assista ao maravilhoso trailer da Venus Craft! aproveite e ajude o canal, compartilhe com amigos e em outros servidor, nos vemos em Venus dia 06 de setembro!⚔💛'
+  },
+  {
     'id': 'venusteaser',
     'titulo': 'Venus Craft 3 | Teaser',
     'descricao': 'Veja o teaser da Venus Craft já disponivel no YouTube!',
