@@ -57,16 +57,16 @@ header h1 {
 main {
     width: 100%;
     height: 100vh;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)), url(../img/backgrounds/background.png);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)), url(../img/backgrounds/egghunt.png);
     background-position: center;
     background-size: cover;
 }
 
 .container {
     justify-content: center;
-    right: -300px;
     text-align: center;
     display: flex;
+    margin-top: 420px;
     width: 100%;
     position: absolute;
     height: 100vh;
@@ -78,10 +78,10 @@ main {
 }
 
 .content h1 {
-    color: #ffe600;
+    color: #b700ff;
     font-family: minecraftia, sans-serif;
     animation: fade-in 2s forwards, glow 2s forwards;
-    text-shadow: #ffe600 1px 1px 10px;
+    text-shadow: #000000 1px 1px 10px;
 }
 
 .content a {
@@ -124,11 +124,13 @@ main {
 
 }
 
-.venus {
+#logo {
     width: 300px;
-    height: 300px;
-    margin-top: 40px;
+    height: auto;
+    margin-bottom: 10px;
+    scale: 1.2;
     animation: fade-in 2s ease forwards;
+    cursor: pointer;
 }
 
 .socials img {

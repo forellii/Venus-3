@@ -8,7 +8,10 @@ ttk.addEventListener('click', () => {
     window.open('https://tiktok.com/@forellii' , '_blank');
 });
 
-
+const logo = document.getElementById('logo')
+logo.addEventListener('click', () => {
+    window.open('https://discord.com/channels/1363124302534414638/1363145842894176497/1411473200298070169' , '_blank');
+});
 
 
 
@@ -45,3 +48,4 @@ function atualizarStatus() {
 atualizarStatus();
 
 setInterval(atualizarStatus, 10000);
+
