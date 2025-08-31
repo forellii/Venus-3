@@ -219,6 +219,17 @@ main {
   display: none;
 }
 
+footer{
+    width: 100%;
+    height: 25vh;
+    background-color: #030303;
+    border-top: #ffffff 1px solid;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
 footer a{
     font-size: 1.2rem;
     font-family: 'montserrat', sans-serif;
