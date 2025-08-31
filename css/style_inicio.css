@@ -69,7 +69,6 @@ main {
     margin-top: 420px;
     width: 100%;
     position: absolute;
-    height: 100vh;
 }
 .container h3 {
     margin-top: -75px;
@@ -163,20 +162,29 @@ main {
     animation: bright 1s ease infinite;
 }
 
+footer{
+    width: 100%;
+    height: 25vh;
+    margin-top: 250px;
+    background-color: #030303;
+    border-top: #ffffff 1px solid;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
 
-#tiktok {
-    transition: 0.2s;
-    scale: 0.6;
+footer a{
+    font-size: 1.2rem;
+    font-family: 'montserrat', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    line-height: 30px;
 }
-#youtube{ 
-    transition: 0.2s;
-    scale: 0.6;
-}
-#youtube:hover{
-    scale: 1;
-}
-#tiktok:hover{
-    scale: 1;
+
+footer a:hover{
+    text-decoration: underline;
 }
 
 @keyframes bright {

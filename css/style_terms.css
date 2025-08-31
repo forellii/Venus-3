@@ -86,7 +86,18 @@ main {
     margin-top: 25px;
 }
 
+footer a{
+    font-size: 1.2rem;
+    font-family: 'montserrat', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    line-height: 30px;
+}
 
+footer a:hover{
+    text-decoration: underline;
+}
 
 
 

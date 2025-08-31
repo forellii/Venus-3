@@ -227,6 +227,18 @@ main {
   text-shadow: #50006d 0px 0px 30px;
 }
 
+footer a{
+    font-size: 1.2rem;
+    font-family: 'montserrat', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    line-height: 30px;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
 
 .header-mobile {
   display: none;
