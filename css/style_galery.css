@@ -65,8 +65,8 @@ main {
 }
 
 .slider {
-  width: 800px;
-  height: 700px;
+  width: 1080px;
+  height: 800px;
   margin: 0 auto;
   overflow: hidden;
   margin-top: 80px;
@@ -74,7 +74,7 @@ main {
 
 .slides {
   display: flex;
-  width: 500px;
+  width: 800px;
   height: 800px;
 }
 
@@ -88,11 +88,10 @@ main {
 }
 
 .slide img {
-  height: 410px;
-  width: 800px;
-  border-radius: 20px;
-  border-bottom: #ffffff 2px solid;
-  border-right: white 2px solid;
+  height: 610px;
+  width: 1090px;
+  border-radius: 5px;
+  box-shadow: rgb(48, 48, 48) 1px 1px 10px;
   transition: box-shadow 0.3s ease;
 }
 
@@ -129,48 +128,76 @@ main {
 }
 
 #radio2:checked~.first {
-  margin-left: -160%;
+  margin-left: -137%;
 }
 
 #radio3:checked~.first {
-  margin-left: -320%;
+  margin-left: -273%;
 }
 
 #radio4:checked~.first {
-  margin-left: -480%;
+  margin-left: -410%;
 }
 
 #radio5:checked~.first {
-  margin-left: -640%;
+  margin-left: -546%;
 }
 
 #radio6:checked~.first {
-  margin-left: -800%;
+  margin-left: -682%;
 }
 
 #radio7:checked~.first {
-  margin-left: -960%;
+  margin-left: -818%;
 }
 
 #radio8:checked~.first {
-  margin-left: -1120%;
+  margin-left: -954%;
 }
 
 #radio9:checked~.first {
-  margin-left: -1280%;
+  margin-left: -1090%;
 }
 
 #radio10:checked~.first {
-  margin-left: -1440%;
+  margin-left: -1226%;
 }
 
 #radio11:checked~.first {
-  margin-left: -1600%;
+  margin-left: -1362%;
 }
 
 #radio12:checked~.first {
-  margin-left: -1760%;
+  margin-left: -1498%;
 }
+
+/*136*/
+
+#dir {
+  position: absolute;
+  right: 200px;
+  bottom: 350px;
+  background-color: #333333;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 3rem;
+  transition: background-color 0.3s ease;
+}
+#esq {
+  position: absolute;
+  left: 200px;
+  bottom: 350px;
+  background-color: #333333;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 3rem;
+  transition: background-color 0.3s ease;}
 
 .content h1 {
   color: #ffffff;
@@ -365,51 +392,51 @@ footer a:hover{
   }
 
   #radio1:checked~.first {
-  margin-left: -42%;
+  margin-left: -45%;
 }
 
 #radio2:checked~.first {
-  margin-left: -200%;
+  margin-left: -175%;
 }
 
 #radio3:checked~.first {
-  margin-left: -360%;
+  margin-left: -310%;
 }
 
 #radio4:checked~.first {
-  margin-left: -520%;
+  margin-left: -450%;
 }
 
 #radio5:checked~.first {
-  margin-left: -680%;
+  margin-left: -590%;
 }
 
 #radio6:checked~.first {
-  margin-left: -840%;
+  margin-left: -730%;
 }
 
 #radio7:checked~.first {
-  margin-left: -1000%;
+  margin-left: -860%;
 }
 
 #radio8:checked~.first {
-  margin-left: -1160%;
+  margin-left: -980%;
 }
 
 #radio9:checked~.first {
-  margin-left: -1320%;
+  margin-left: -1135%;
 }
 
 #radio10:checked~.first {
-  margin-left: -1480%;
+  margin-left: -1275%;
 }
 
 #radio11:checked~.first {
-  margin-left: -1640%;
+  margin-left: -1400%;
 }
 
 #radio12:checked~.first {
-  margin-left: -1800%;
+  margin-left: -1540%;
 }
 
 #dir {
