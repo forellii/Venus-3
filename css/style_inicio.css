@@ -359,4 +359,10 @@ footer a:hover{
         color: #ff0000;
         animation: bright 1s ease infinite;
     }
+    #status {
+        font-size: 1.2rem;
+        top: -10px;
+    }
+
+    
 }
