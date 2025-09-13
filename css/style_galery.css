@@ -175,7 +175,7 @@ main {
 
 #dir {
   position: absolute;
-  right: 200px;
+  right: 130px;
   bottom: 350px;
   background-color: #333333;
   color: #ffffff;
@@ -183,12 +183,12 @@ main {
   padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 3rem;
+  font-size: 2rem;
   transition: background-color 0.3s ease;
 }
 #esq {
   position: absolute;
-  left: 200px;
+  left: 130px;
   bottom: 350px;
   background-color: #333333;
   color: #ffffff;
@@ -196,7 +196,7 @@ main {
   padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 3rem;
+  font-size: 2rem;
   transition: background-color 0.3s ease;}
 
 .content h1 {
