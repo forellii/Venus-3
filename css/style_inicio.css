@@ -119,8 +119,6 @@ main {
     font-size: 2rem;
     font-family: 'Minecraft Title', sans-serif;
     animation: fade-in 1s ease forwards, glow 2s ease infinite;
- ;
-
 }
 
 #logo {
