@@ -168,7 +168,10 @@ main {
 }
 
 #radio12:checked~.first {
-  margin-left: -1498%;
+  margin-left: -1500%;
+}
+#radio13:checked~.first {
+  margin-left: -1636%;
 }
 
 /*136*/

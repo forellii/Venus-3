@@ -13,7 +13,7 @@ const btnPrev = document.getElementById('esq');
 
 function next() {
     count++;
-    if (count > 12) {
+    if (count > 13) {
         count = 1;
     }
     document.getElementById("radio" + count).checked = true;
@@ -25,7 +25,7 @@ btnNext.addEventListener('click', () => {
 function prev() {
     count--;
     if (count < 1) {
-        count = 12;
+        count = 13;
     }
     document.getElementById("radio" + count).checked = true;
 }
