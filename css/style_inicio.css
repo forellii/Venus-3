@@ -124,6 +124,7 @@ main {
 #logo {
     width: 400px;
     height: auto;
+    max-width: 100%;
     margin: 20px 20px;
     filter: brightness(1.4);
     scale: 1.2;
