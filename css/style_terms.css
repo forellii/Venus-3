@@ -19,27 +19,36 @@ body {
 }
 
 header .desktop {
-  position: relative;
-  max-width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  display: flexbox;
-  height: 12vh;
-  border-bottom: rgb(59, 59, 59) solid 1px;
-  border-top: rgb(59, 59, 59) solid 1px;
+    position: relative;
+    max-width: 100%;
+    display: flex;
+    gap: 40px;
+    transform: translateX(60px);
+    align-items: center;
+    display: flexbox;
+    background-color: #000000;
+    height: 12vh;
+    border-bottom: rgb(59, 59, 59) solid 1px;
+    border-top: rgb(59, 59, 59) solid 1px;
 }
 
 header a {
-  text-decoration: none;
-  font-size: 4rem;
-  font-family: 'Minecraft Title', sans-serif;
-  color: #ffffff;
-  text-shadow: #50006d 1px 1px 40px;
-  letter-spacing: 2px;
-  font-weight: 700;
-  scale: 1;
-  transition: scale 0.3s ease, color 0.3s ease;
+    text-decoration: none;
+    font-size: 3rem;
+    font-family: 'Minecraft Title', sans-serif;
+    color: #ffffff;
+    text-shadow: #50006d 1px 1px 40px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    transition: scale 0.3s ease, color 0.3s ease;
+}
+
+header img {
+    width: 80px;
+    height: auto;
+    filter: brightness(1.2);
+    position: absolute;
+    right: 80px;
 }
 
 header a:hover {

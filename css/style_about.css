@@ -25,7 +25,8 @@ header .desktop {
   position: relative;
   max-width: 100%;
   display: flex;
-  justify-content: center;
+  gap: 40%;
+  transform: translateX(60px);
   align-items: center;
   height: 12vh;
   border-bottom: rgb(59, 59, 59) solid 1px;
@@ -42,6 +43,14 @@ header .desktop::before {
   height: 100%;
   backdrop-filter: blur(15px);
   z-index: -1;
+}
+
+header img {
+    width: 80px;
+    height: auto;
+    filter: brightness(1.2);
+    position: absolute;
+    right: 80px;
 }
 
 header a {
