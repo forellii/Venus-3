@@ -8,6 +8,22 @@ feedContainer.innerHTML = "";
 
 // Cria post sem interação
 const noticias = [
+//  {
+//  'id': '',
+//    'titulo': '',
+//    'descricao': '',
+//    'imagem': '',
+//    'fonte': '',
+//   'detalhes': ''
+//  },
+  {
+    'id': 'ricardo´s festival',
+    'titulo': 'Assista ao Ricardo´s Festival!',
+    'descricao': 'Neste video você pode assistir ao Ricardo´s Festival, um evento incrível que aconteceu na Venus Craft!',
+    'imagem': '../img/thumbs/RF.png',
+    'fonte': 'https://youtu.be/Xx-yoMJLHLA',
+    'detalhes': 'Assista ao Ricardo´s Festival, um evento incrível que aconteceu na Venus Craft! Com muita música, diversão e a participação especial do Ricardo, esse festival foi um marco na nossa comunidade. Não perca a chance de reviver esses momentos inesquecíveis e se divertir com a gente novamente!'
+  },
   {
     'id': 'venustrailer',
     'titulo': 'Venus Craft | Temporada 3!',
