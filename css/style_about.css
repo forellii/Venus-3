@@ -45,23 +45,23 @@ header .desktop::before {
 }
 
 header img {
-    width: 80px;
-    height: auto;
-    filter: brightness(1.2);
-    position: absolute;
-    right: 80px;
+  width: 80px;
+  height: auto;
+  filter: brightness(1.2);
+  position: absolute;
+  right: 80px;
 }
 
 header a {
-    text-decoration: none;
-    font-size: 3rem;
-    font-family: 'Minecraft Title', sans-serif;
-    color: #ffffff;
-    transform: translateX(60px);
-    text-shadow: #50006d 1px 1px 10px;
-    letter-spacing: 2px;
-    font-weight: 700;
-    transition: scale 0.3s ease, color 0.3s ease;
+  text-decoration: none;
+  font-size: 3rem;
+  font-family: 'Minecraft Title', sans-serif;
+  color: #ffffff;
+  transform: translateX(60px);
+  text-shadow: #50006d 1px 1px 10px;
+  letter-spacing: 2px;
+  font-weight: 700;
+  transition: scale 0.3s ease, color 0.3s ease;
 }
 
 
@@ -470,28 +470,28 @@ header h1 {
   display: none;
 }
 
-footer{
-    width: 100%;
-    height: 25vh;
-    background-color: #030303;
-    border-top: #ffffff 1px solid;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
+footer {
+  width: 100%;
+  height: 25vh;
+  background-color: #030303;
+  border-top: #ffffff 1px solid;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 
-footer a{
-    font-size: 1.2rem;
-    font-family: 'montserrat', sans-serif;
-    font-weight: bold;
-    text-decoration: none;
-    color: white;
-    line-height: 30px;
+footer a {
+  font-size: 1.2rem;
+  font-family: 'montserrat', sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  line-height: 30px;
 }
 
-footer a:hover{
-    text-decoration: underline;
+footer a:hover {
+  text-decoration: underline;
 }
 
 @media (max-width: 1000px) {
@@ -511,78 +511,73 @@ footer a:hover{
   }
 
   .header-mobile {
-    display: flex;
     position: relative;
-    justify-content: space-around;
-    font-size: 1.4rem;
-    align-items: center;
-    width: 100%;
-    height: 10vh;
-    border-bottom: rgb(59, 59, 59) solid 1px;
-  }
-
-  .header-mobile::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    backdrop-filter: blur(15px);
-    z-index: -1;
-  }
-
-  .main {
-    /*O texto da pagina atual no header mobile*/
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    transform: translateX(10%) scale(0.8);
-    font-size: 3.4rem;
-    margin-right: -100px;
+    align-items: center;
+    width: 100%;
+    height: 90px;
+    background-color: #000000;
+    overflow: hidden;
+    border-bottom: rgb(59, 59, 59) solid 1px;
+    transition: 0.3s;
+  }
+
+  .header-mobile a {
+    transform: translate(0px, 70px);
+  }
+
+  .header-mobile a:not(.main) {
+    font-size: 1.8rem;
+  }
+
+  #header.open {
+    height: 250px;
+  }
+
+  #header.open a:not(.main) {
+    opacity: 1;
+    transform: translateY(-30px);
+  }
+
+  .header-mobile .main {
+    opacity: 1;
+    transform: none;
+  }
+
+  .header-top {
+    justify-content: space-between;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    transform: translate(40px, 20px);
+    transition: 0.3s;
+  }
+
+  .header-top.up {
+    transform: translate(40px, 0px);
   }
 
   #btn-open {
     width: 30px;
     height: 30px;
     background: none;
+    transform: translate(-100px, -32px);
     border: none;
     color: #ffffff;
     border-radius: 4px;
-    font-size: 1rem;
-    transform: translateY(-16px) scale(1.8);
+    font-size: 3rem;
     padding: 20px 10px;
     cursor: pointer;
   }
 
-  #menu {
+  .main {
     display: flex;
-    position: fixed;
     flex-direction: column;
-    align-items: right;
-    justify-content: right;
-    background-color: rgba(0, 0, 0, 0.4);
-    border: 1px solid rgba(255, 255, 255, 0.164);
-    transform: translate(300%, 80%);
-    text-align: right;
-    transition: 0.5s;
-    padding: 10px 30px;
-    z-index: 2;
-    border-bottom-left-radius: 10px;
-  }
-
-  #menu a {
-    text-decoration: none;
-    color: #ffffff;
-    border-bottom: rgba(255, 255, 255, 0.164) 1px solid;
-    font-size: 2rem;
-    transition: color 0.3s ease;
-  }
-
-  #menu.open {
-    transform: translate(30%, 80%);
-    z-index: 10;
+    align-items: center;
+    justify-content: center;
   }
 
   .container {
@@ -802,5 +797,8 @@ footer a:hover{
   #btn-close {
     bottom: 10px;
     left: 36%;
+  }
+  footer {
+    margin-top: -40%;
   }
 }
