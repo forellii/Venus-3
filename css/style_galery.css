@@ -23,7 +23,6 @@ header .desktop {
     max-width: 100%;
     display: flex;
     gap: 40px;
-    transform: translateX(60px);
     align-items: center;
     display: flexbox;
     background-color: #000000;
