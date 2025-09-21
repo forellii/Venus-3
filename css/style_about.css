@@ -25,8 +25,7 @@ header .desktop {
   position: relative;
   max-width: 100%;
   display: flex;
-  gap: 40%;
-  transform: translateX(60px);
+  gap: 40px;
   align-items: center;
   height: 12vh;
   border-bottom: rgb(59, 59, 59) solid 1px;
@@ -54,17 +53,17 @@ header img {
 }
 
 header a {
-  text-decoration: none;
-  font-size: 4rem;
-  font-family: 'Minecraft Title', sans-serif;
-  color: #ffffff;
-  text-shadow: #ffffff7a 1px 1px 10px;
-  letter-spacing: 2px;
-  font-weight: 700;
-  scale: 1;
-  transition: scale 0.3s ease, color 0.3s ease;
-
+    text-decoration: none;
+    font-size: 3rem;
+    font-family: 'Minecraft Title', sans-serif;
+    color: #ffffff;
+    transform: translateX(60px);
+    text-shadow: #50006d 1px 1px 10px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    transition: scale 0.3s ease, color 0.3s ease;
 }
+
 
 header a:hover {
   scale: 1.1;

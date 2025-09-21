@@ -21,10 +21,9 @@ body {
 
 header .desktop {
     position: relative;
-    max-width: 100%;
+    width: 100%;
     display: flex;
     gap: 40px;
-    transform: translateX(60px);
     align-items: center;
     display: flexbox;
     background-color: #000000;
@@ -38,6 +37,7 @@ header a {
     font-size: 3rem;
     font-family: 'Minecraft Title', sans-serif;
     color: #ffffff;
+    transform: translateX(60px);
     text-shadow: #50006d 1px 1px 40px;
     letter-spacing: 2px;
     font-weight: 700;
