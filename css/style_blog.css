@@ -192,9 +192,11 @@ main {
 
 
 #details h1 {
-  font-size: 3rem;
+  font-size: 2rem;
+  border-bottom: #ffffff 2px solid;
   color: #ffffff;
   margin-top: 20px;
+  margin-bottom: 20px;
   font-family: minecraftia, sans-serif;
   line-height: 1.5;
 }
@@ -264,14 +266,11 @@ footer a:hover {
 
 @media (max-width: 768px) {
 
-  html,
-  body {
-    max-width: 100%;
-    overscroll-behavior-y: auto;
-  }
-
-  * {
+  html {
     scrollbar-width: none;
+  }
+  html.aberto {
+    overflow: hidden;
   }
 
   header .desktop {
@@ -365,14 +364,15 @@ footer a:hover {
   #details {
     width: 100%;
     max-width: 800px;
-    right: -1000px;
+    left: 0px;
     padding: 20px;
-    height: 600px;
-    transform: translate(0%, 20%);
+    height: 1000px;
+    transform: translate(0%, 120%);
     border-radius: 8px;
     background-color: rgba(0, 0, 0, 0.7);
     z-index: 5;
     border: #ffffff5d solid 1px;
+    transition: 0.6s;
   }
 
   #details::before {
@@ -387,16 +387,21 @@ footer a:hover {
   }
 
   #details.aberto {
-    transform: translate(0%, 20%);
+    transform: translate(0%, 10%);
   }
 
   #details p {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-left: 5px;
   }
 
   #details h1 {
-    font-size: 2.2rem;
+    font-size:1.6rem;
+  }
+
+  #close {
+    font-size: 1.2rem;
+    padding: 5px 15px;
   }
 
   .descricao {
