@@ -1,6 +1,6 @@
 const logo = document.getElementById('logo')
 logo.addEventListener('click', () => {
-    window.open('https://discord.com/channels/1363124302534414638/1363145842894176497/1411473200298070169' , '_blank');
+    window.open('' , '_blank');
 });
 
 //mobile menu
@@ -23,9 +23,9 @@ function atualizarStatus() {
         let players = data.players.online;
         let max = data.players.max;
         let version = data.version.name_raw;
-        status.innerHTML = `Online - ${players}/${max} jogadores`;
+        status.innerHTML = `🟢 - ${players}/${max} `;
       } else {
-        status.innerHTML = "Servidor Offline";
+        status.innerHTML = "🔴 - OFF";
       }
     })
     .catch(() => {
