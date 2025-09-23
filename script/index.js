@@ -1,6 +1,6 @@
-const logo = document.getElementById('logo')
-logo.addEventListener('click', () => {
-    window.open('' , '_blank');
+const play = document.getElementById('play')
+play.addEventListener('click', () => {
+    window.open('https://discord.gg/wgYH9KQXUK' , '_blank');
 });
 
 //mobile menu

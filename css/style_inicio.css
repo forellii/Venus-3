@@ -15,8 +15,11 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 0px;
-    height: 100vh;
-    
+    height: 100%;
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)), url(../img/backgrounds/endingRF.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 header .desktop {
@@ -67,12 +70,10 @@ header h1 {
     justify-content: center;
     align-items: center;
     text-align: center;
+    transform: translateX(-350px);
     flex-direction: column;
     height: 100vh;
     width: 100%;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url(../img/backgrounds/endingRF.png);
-    background-position: center;
-    background-size: cover;
 }
 
 .container h1 {
@@ -117,6 +118,25 @@ header h1 {
     font-size: 2rem;
     font-family: 'Minecraft Title', sans-serif;
     animation: fade-in 1s ease forwards, glow 2s ease infinite;
+}
+
+#play {
+    cursor: pointer;
+    background-color: rgb(207, 207, 207);
+    padding: 10px 20px;
+    color: rgb(88, 88, 88);
+    font-family: minecraftia, sans-serif;
+    text-shadow: none;
+    animation: none;
+    font-size: 1rem;
+    border-radius: 0px;
+    border: #000000 2px solid;
+}
+
+#play:hover {
+    background-color: green;
+    color: white;
+    border: #ffffff 2px solid;
 }
 
 #logo {
