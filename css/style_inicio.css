@@ -181,7 +181,7 @@ main{
     height: auto;
     padding: 50px 100px;
     margin-top: 50px;
-    background: linear-gradient(to left, #9d00ff, #0059a8);
+    background: linear-gradient(to left, #9d00ff, #fc8600bb);
     border-bottom: rgb(0, 0, 0) 4px solid;
     border-radius: 30px;
     border-right: rgb(0, 0, 0) 4px solid;
@@ -249,7 +249,7 @@ main{
 }
 
 .basic, .advance, .supreme, .storm{
-    background-color: #9d00ff41;
+    background-color: #fc710034;
     padding: 50px 20px;
     border-radius: 20px;
     transition: 0.1s;
