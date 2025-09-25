@@ -37,3 +37,8 @@ atualizarStatus();
 
 setInterval(atualizarStatus, 10000);
 
+function myFunction() {
+  var copyText = document.getElementById("ip-server").value;
+  navigator.clipboard.writeText(copyText).then(() => {
+  });
+}

@@ -14,12 +14,7 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding: 0px;
-    height: 100%;
-    background: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)), url(../img/backgrounds/endingRF.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    height: 100vh;
 }
 
 header .desktop {
@@ -65,15 +60,22 @@ header h1 {
     margin: 25px;
 }
 
+main{
+    background-color: rgb(35, 1, 24);
+}
+
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    transform: translateX(-350px);
     flex-direction: column;
     height: 100vh;
     width: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)), url(../img/backgrounds/endingRF.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .container h1 {
@@ -174,14 +176,88 @@ header h1 {
     display: inline-block;
 }
 
-.ct {
-    font-family: minecraft title, sans-serif;
-    font-size: 3.5rem;
-    color: white;
-    text-decoration: none;
-    text-shadow: #ff0000 0px 0px 0px;
-    animation: bright 1s ease infinite;
+.info {
+    width: 100%;
+    height: auto;
+    padding: 50px 100px;
+    margin-top: 50px;
+    background: linear-gradient(to left, #9d00ff, #0059a8);
+    border-bottom: rgb(0, 0, 0) 4px solid;
+    border-radius: 30px;
+    border-right: rgb(0, 0, 0) 4px solid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
+
+.info, .compras h1 {
+    color: wheat;
+    font-family: minecraftia, sans-serif;
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+    border-bottom: #ffffff 2px solid;
+}
+.info, .compras p {
+    color: wheat;
+    font-family: "konkhmer-sleokchher", sans-serif;
+    font-size: 1.4rem;
+}
+
+.info button {
+    padding: 20px 150px;
+    font-family: "minecraftia", sans-serif;
+    border: white 3px solid;
+    border-radius: 10px;
+    background-color: #50006d;
+    color: white;
+    margin-top: 30px;
+    transition: 0.1s;
+}
+
+.info button:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.compras{
+    width: 100%;
+    height: auto;
+    padding: 50px 100px;
+    margin-top: 50px;
+    background: linear-gradient(to left, #000000, #353535);
+    border-bottom: rgb(0, 0, 0) 4px solid;
+    border-radius: 30px;
+    border-right: rgb(0, 0, 0) 4px solid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.compras h1{
+    border-bottom: none;
+    font-family: "konkhmer-sleokchher", sans-serif;
+    font-size: 3rem;
+}
+
+.kits{
+    display: flex;
+    height: auto;
+    gap: 50px;
+}
+.kits h1{
+    border-bottom: #ffffff 2px solid;
+    font-family: minecraftia, sans-serif;
+    font-size: 2rem;
+}
+
+.basic, .advance, .supreme, .storm{
+    background-color: #9d00ff41;
+    padding: 50px 20px;
+    border-radius: 20px;
+    transition: 0.1s;
+}
+.basic:hover, .advance:hover, .supreme:hover, .storm:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
 
 footer {
     width: 100%;
@@ -382,4 +458,36 @@ footer a:hover {
         margin-top: -10px
     }
 
+    .info {
+        padding: 40px 20px;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .info h1 {
+        max-width: 100%;
+        font-size: 1.6rem;
+        margin-bottom: 10px;
+    }
+    .info p {
+        max-width: 90%;
+        justify-content: center;
+        align-items: center;
+        font-size: 1rem;
+    }
+    .info button {
+        padding: 15px 80px;
+        font-size: 1rem;
+    }
+    .compras {
+        padding: 40px 20px;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+    }
+    .kits{
+        flex-direction: column;
+        width: 95%;
+    }
 }
