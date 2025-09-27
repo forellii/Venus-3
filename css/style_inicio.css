@@ -72,7 +72,7 @@ main{
     flex-direction: column;
     height: 100vh;
     width: 100%;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)), url(../img/backgrounds/endingRF.png);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)), url(../img/backgrounds/planet6.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -107,6 +107,7 @@ main{
 .container p {
     color: #ffffff;
     margin-top: 30px;
+    max-width: 40ch;
     font-size: 1.2rem;
     font-family: minecraftia, sans-serif;
     animation: fade-in 2s forwards;
@@ -151,6 +152,7 @@ main{
     animation: fade-in 2s ease forwards;
     cursor: pointer;
     display: inline-block;
+    display: none;
 }
 
 .socials img {
@@ -181,18 +183,15 @@ main{
     height: auto;
     padding: 50px 100px;
     margin-top: 50px;
-    background: linear-gradient(to left, #9d00ff, #fc8600bb);
     border-bottom: rgb(0, 0, 0) 4px solid;
     border-radius: 30px;
-    border-right: rgb(0, 0, 0) 4px solid;
     align-items: center;
     justify-content: center;
     text-align: center;
 }
 
-.info, .compras h1 {
+.info h1, .compras h1 {
     color: wheat;
-    font-family: minecraftia, sans-serif;
     font-size: 2.4rem;
     margin-bottom: 20px;
     border-bottom: #ffffff 2px solid;
@@ -208,7 +207,7 @@ main{
     font-family: "minecraftia", sans-serif;
     border: white 3px solid;
     border-radius: 10px;
-    background-color: #50006d;
+    background-color: #600083c4;
     color: white;
     margin-top: 30px;
     transition: 0.1s;
@@ -234,13 +233,14 @@ main{
 .compras h1{
     border-bottom: none;
     font-family: "konkhmer-sleokchher", sans-serif;
-    font-size: 3rem;
+    font-size: 3.4rem;
+    font-style: italic;
 }
 
 .kits{
     display: flex;
     height: auto;
-    gap: 50px;
+    gap: 20px;
 }
 .kits h1{
     border-bottom: #ffffff 2px solid;
@@ -248,7 +248,7 @@ main{
     font-size: 2rem;
 }
 
-.Yshulker, .Lshulker, .Rshulker, .Bshulker{
+.Yshulker, .Lshulker, .Rshulker, .Bshulker, .Pshulker{
     width: 150px;
     height: auto;
     border-radius: 20px;
@@ -268,18 +268,32 @@ main{
 .Bshulker{
     animation: floating 3s ease-in-out 1.5s infinite;
 }
+.Pshulker{
+    animation: floating 3s ease-in-out 2s infinite;
+}
 
-#basic, #advance, #supreme, #storm{
+#basic, #advance, #supreme, #storm, #booster{
     background-color: #fc710034;
     padding: 50px 20px;
     border-radius: 20px;
     transition: 0.3s;
 }
-#basic:hover, #advance:hover, #supreme:hover, #storm:hover{
+#basic:hover, #advance:hover, #supreme:hover, #storm:hover, #booster:hover{
     background-color: rgba(0, 0, 0, 0.2);
     scale: 1.05;
 }
-
+.spoilerp{
+    transition: 0.3s;
+    display: block;
+    width: 0%;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+#booster:hover .spoilerp{
+    transition: 0.3s;
+    display: block;
+    width: 100%;
+}
 .spoilerb{
     transition: 0.3s;
     display: block;

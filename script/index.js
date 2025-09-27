@@ -42,3 +42,25 @@ function myFunction() {
   navigator.clipboard.writeText(copyText).then(() => {
   });
 }
+
+//kits
+const basic = document.getElementById('basic')
+basic.addEventListener('click', () => {
+    window.open('https://discord.com/channels/1363124302534414638/1363137487467188315/1409185375989141544' , '_blank');
+});
+const advance = document.getElementById('advance')
+advance.addEventListener('click', () => {
+    window.open('https://discord.com/channels/1363124302534414638/1363137487467188315/1409185375989141544' , '_blank');
+});
+const supreme = document.getElementById('supreme')
+supreme.addEventListener('click', () => {
+    window.open('https://discord.com/channels/1363124302534414638/1363137487467188315/1409185375989141544' , '_blank');
+});
+const storm = document.getElementById('storm')
+storm.addEventListener('click', () => {
+    window.open('https://discord.com/channels/1363124302534414638/1363137487467188315/1409185375989141544' , '_blank');
+});
+const booster = document.getElementById('booster')
+booster.addEventListener('click', () => {
+    window.open('https://discord.com/channels/1363124302534414638/1363137487467188315/1418333354142470285' , '_blank');
+});
