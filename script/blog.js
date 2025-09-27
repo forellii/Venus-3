@@ -8,14 +8,23 @@ feedContainer.innerHTML = "";
 
 // Cria post sem interação
 const noticias = [
-//  {
-//  'id': '',
-//    'titulo': '',
-//    'descricao': '',
-//    'imagem': '',
-//    'fonte': '',
-//   'detalhes': ''
-//  },
+  //  {
+  //  'id': '',
+  //    'titulo': '',
+  //    'descricao': '',
+  //    'imagem': '',
+  //    'fonte': '',
+  //   'detalhes': ''
+  //  },
+  //  {
+  {
+    'id': 'Planet 6',
+    'titulo': 'Jogue o Planet 6...',
+    'descricao': 'Tente sobreviver aos jogos, onde a confiaça não é uma opção e apenas os mais fortes passarão!',
+    'imagem': '../img/posts/OorX.png',
+    'fonte': 'https://youtu.be/V9x5PPFpi4o',
+    'detalhes': 'Tente sobreviver aos 5 jogos cruéis do Planet 6, nós preparamos a experiência presando nosso entretenimento, enquanto vemos vocês se rastejarem para o prêmio avaliado em 456,000V$, uma dica... talvez a confianção não seja uma opção que você deve escolher, e lembre-se, você só sairá daqui vivo ou morto... "Vocês terão que estar vivos para poderem dormir a próxima noite onde juntos irão passar por dificuldades até seu ultimo jantar, que nas alturas, terão que se superar"'
+  },
   {
     'id': 'ricardo´s festival',
     'titulo': 'Assista ao Ricardo´s Festival!',
@@ -80,7 +89,7 @@ function criarPostagem(noticia) {
   descricao.className = 'descricao';
   descricao.textContent = noticia.descricao;
 
-   function abrirDetalhes() {
+  function abrirDetalhes() {
     content.textContent = noticia.detalhes;
     details.classList.add('aberto');
   }
@@ -88,13 +97,13 @@ function criarPostagem(noticia) {
   titulo.addEventListener('click', abrirDetalhes);
 
   if (noticia.fonte && noticia.fonte.trim() !== "") {
-  const fonte = document.createElement('a');
-  fonte.className = 'fonte';
-  fonte.href = noticia.fonte;
-  fonte.textContent = 'Visitar';
-  fonte.target = '_blank';
-  conteudo.appendChild(fonte);
-}
+    const fonte = document.createElement('a');
+    fonte.className = 'fonte';
+    fonte.href = noticia.fonte;
+    fonte.textContent = 'Visitar';
+    fonte.target = '_blank';
+    conteudo.appendChild(fonte);
+  }
 
   conteudo.appendChild(titulo);
   conteudo.appendChild(descricao);
@@ -118,8 +127,8 @@ const btnOpen = document.getElementById('btn-open');
 const headertop = document.querySelector('.header-top');
 
 btnOpen.addEventListener('click', () => {
-    menu.classList.toggle('open');
-    headertop.classList.toggle('up');
+  menu.classList.toggle('open');
+  headertop.classList.toggle('up');
 });
 
 const pullToRefresh = document.querySelector('.pull-to-refresh');
