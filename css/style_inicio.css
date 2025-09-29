@@ -72,7 +72,7 @@ main {
     flex-direction: column;
     height: 100vh;
     width: 100%;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)), url(../img/backgrounds/planet6.png);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1)), url(../img/backgrounds/background.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -80,8 +80,8 @@ main {
 
 .container h1 {
     color: #ffe600;
-    font-family: minecraftia, sans-serif;
-    animation: fade-in 2s forwards, glow 2s forwards;
+    font-family: minecraft title;
+    animation: fade-in 2s forwards;
     text-shadow: #000000 1px 1px 10px;
 }
 
@@ -91,14 +91,14 @@ main {
     font-size: 2rem;
     text-decoration: none;
     font-family: Minecraft title, sans-serif;
-    animation: fade-in 2s forwards, glow 2s forwards;
+    animation: fade-in 2s forwards;
     text-shadow: #ff0095 2px 2px 1px;
 }
 
 .container h1::before {
     content: "";
     display: block;
-    width: 100px;
+    width: 200%;
     margin: 0 auto;
     border-bottom: 1px solid #ffffff;
     animation: esticar 2s forwards;
@@ -106,7 +106,7 @@ main {
 
 .container p {
     color: #ffffff;
-    margin-top: 30px;
+    margin-top: 0px;
     max-width: 40ch;
     font-size: 1.2rem;
     font-family: minecraftia, sans-serif;
@@ -152,7 +152,6 @@ main {
     animation: fade-in 2s ease forwards;
     cursor: pointer;
     display: inline-block;
-    display: none;
 }
 
 .socials img {
@@ -459,17 +458,17 @@ footer a:hover {
     }
 
     to {
-        width: 310px;
+        width: 460px;
     }
 }
 
 @keyframes glow {
     0% {
-        text-shadow: #7289da 0 0 0px;
+        text-shadow: #ffee00 0 0 0px;
     }
 
     50% {
-        text-shadow: 0 0 6px #7289da;
+        text-shadow: 0 0 6px #eeff00;
     }
 }
 
