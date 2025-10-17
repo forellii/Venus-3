@@ -3,6 +3,23 @@ play.addEventListener('click', () => {
     window.open('https://discord.gg/wgYH9KQXUK' , '_blank');
 });
 
+const yt = document.getElementById('yt')
+yt.addEventListener('click', () => {
+    window.open('https://youtube.com/@forelliii' , '_blank');
+});
+const ttk = document.getElementById('ttk')
+ttk.addEventListener('click', () => {
+    window.open('https://www.tiktok.com/@forellii' , '_blank');
+});
+const dc = document.getElementById('dc')
+dc.addEventListener('click', () => {
+    window.open('https://discord.gg/wgYH9KQXUK' , '_blank');
+});
+const ig = document.getElementById('ig')
+ig.addEventListener('click', () => {
+    window.open('https://www.instagram.com/forelliii/' , '_blank');
+});
+
 //mobile menu
 const menu = document.getElementById('header');
 const btnOpen = document.getElementById('btn-open');
@@ -37,7 +54,7 @@ atualizarStatus();
 
 setInterval(atualizarStatus, 10000);
 
-function myFunction() {
+function copy() {
   var copyText = document.getElementById("ip-server").value;
   navigator.clipboard.writeText(copyText).then(() => {
   });
