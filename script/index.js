@@ -32,7 +32,7 @@ btnOpen.addEventListener('click', () => {
 
 //Status do Servidor
 function atualizarStatus() {
-  fetch("https://api.mcstatus.io/v2/status/java/br-ultra-5.enxadahost.com:10006")
+  fetch("https://api.mcstatus.io/v2/status/java/TROCAR")
     .then(res => res.json())
     .then(data => {
       let status = document.getElementById("status");
@@ -46,7 +46,7 @@ function atualizarStatus() {
       }
     })
     .catch(() => {
-      document.getElementById("status").innerHTML = "Erro ao buscar status";
+      document.getElementById("status").innerHTML = "🔴 - OFF";
     });
 }
 
