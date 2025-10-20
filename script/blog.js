@@ -150,3 +150,20 @@ document.addEventListener('touchend', e => {
     location.reload();
   }
 });
+
+const yt = document.getElementById('yt')
+yt.addEventListener('click', () => {
+    window.open('https://youtube.com/@forelliii' , '_blank');
+});
+const ttk = document.getElementById('ttk')
+ttk.addEventListener('click', () => {
+    window.open('https://www.tiktok.com/@forellii' , '_blank');
+});
+const dc = document.getElementById('dc')
+dc.addEventListener('click', () => {
+    window.open('https://discord.gg/wgYH9KQXUK' , '_blank');
+});
+const ig = document.getElementById('ig')
+ig.addEventListener('click', () => {
+    window.open('https://www.instagram.com/forelliii/' , '_blank');
+});
