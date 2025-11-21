@@ -16,15 +16,15 @@
   <link rel="stylesheet" href="../css/style_inicio.css">
   <link rel="venus icon" href="../img/logos/venus_logo_.png">
   <link rel="icon" type="image/png" href="../img/logos/venus_logo_.png">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Londrina+Solid:wght@100;300;400;900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
   <header>
     <div class="desktop">
-      <a href="">Inicio</a>
-      <a href="posts" style="font-size: 2.2rem; color: rgb(201, 201, 201);">postagens</a>
-      <a href="about" style="font-size: 2.2rem; color: rgb(201, 201, 201);">sobre</a>
-      <h3 id="status"></h3>
+      <img src="../img/logos/venus-horizontal.png" alt="">
     </div>
     <div class="header-mobile" id="header">
       <div class="header-top">
@@ -37,31 +37,46 @@
   </header>
   <main>
     <section class="container">
-      <img id="logo" src="../img/logos/venus-horizontal.png" alt="venus_logo">
+      <img id="logo" src="../img/logos/4.png" alt="venus_logo">
       <h1></h1>
-      <p>Nos vemos em breve...</p>
-      <h2 id="play">Discord</h2>
+      <h2 id="play">Entrar</h2>
     </section>
     <section class="container2">
       <div class="info">
-        <h1>Oque e a Venus Craft?</h1>
+        <h1>Novidades</h1>
+        <iframe src="https://www.youtube.com/embed/HiXcwRiRxkE"
+          title="Rumo a outro sistema solar... | Fim da Temporada 3" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
+          style="width: 95%; height: 400px; border-radius: 20px;"></iframe>
+        <h1 style="margin-top: 40px" ;>Oque e a Venus Craft?</h1>
         <p>A Venus Craft consiste em uma experiência vanilla SMP, onde possuimos também
           eventos semanais e prêmios unicos a nossos jogadores, sendo disponível para a versão Bedrock e Java (incluindo
           consoles)</p>
-        <button id="ip-server" value="mc.venuscraft.xyz:10006" onclick="copy()">Jogue agora! (copiar)</button>
-        <h1 style="margin-top: 40px;">Novidade</h1>
-        <iframe src="https://www.youtube.com/embed/HiXcwRiRxkE" title="Rumo a outro sistema solar... | Fim da Temporada 3" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen style="width: 95%; height: 400px; border-radius: 20px;"></iframe>
+        <button id="ip-server" value="mc.venuscraft.xyz:10006" onclick="copy()">mc.venuscraft.xyz</button>
+        <div class="join">
+          <img src="../img/backgrounds/int2.png" alt="">
+          <div class="join-text">
+            <p>Entre em nosso servidor do Discord para poder jogar e receber avisos sobre eventos e novidades, trocar ideias com 
+              outros jogadores e receber ajudar com qualquer duvida que você tenha!
+              <br><br> Siga <button onclick="scrollpage()">Forellii</button> nas redes sociais para ficar por dentro sobre cada anuncio antes de todo mundo!
+            </p>
+          </div>
+        </div>
+        <div class="end">
+            <img src="../img/backgrounds/enderforellii.png" alt="">
+          </div>
         <div class="redes">
           <img id="yt" src="../img/youtube-app-white-icon.png" alt="youtube">
           <img id="ttk" src="../img/tiktok.png" alt="tiktok">
           <img id="dc" src="../img/discord-white-icon.png" alt="discord">
           <img id="ig" src="../img/instagram-white-icon.png" alt="instagram">
         </div>
-      <h2 style="margin-top: 20px; color: wheat; font-family: sans-serif;">Forellii - Venus Craft</h2>
+        <h2 style="margin-top: 20px; color: wheat; font-family: sans-serif; z-index: 1000;">Forellii - Venus Craft</h2>
       </div>
     </section>
   </main>
   <script src="../script/index.js"></script>
+  <script src="../script/count.js"></script>
 </body>
-
 </html>

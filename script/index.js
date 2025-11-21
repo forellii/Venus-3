@@ -60,6 +60,13 @@ function copy() {
   });
 }
 
+function scrollpage() {
+    window.scrollTo({
+        top: 10000,
+        behavior: 'smooth'
+    });
+}
+
 //kits
 const basic = document.getElementById('basic')
 basic.addEventListener('click', () => {
