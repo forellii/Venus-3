@@ -20,16 +20,6 @@ ig.addEventListener('click', () => {
     window.open('https://www.instagram.com/forelliii/' , '_blank');
 });
 
-//mobile menu
-const menu = document.getElementById('header');
-const btnOpen = document.getElementById('btn-open');
-const headertop = document.querySelector('.header-top');
-
-btnOpen.addEventListener('click', () => {
-    menu.classList.toggle('open');
-    headertop.classList.toggle('up');
-});
-
 //Status do Servidor
 function atualizarStatus() {
   fetch("https://api.mcstatus.io/v2/status/java/TROCAR")

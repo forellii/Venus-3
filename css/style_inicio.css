@@ -4,6 +4,7 @@
 @import url('https://fonts.cdnfonts.com/css/minecraft-title');
 @import url('https://fonts.cdnfonts.com/css/konkhmer-sleokchher');
 @import url('https://fonts.cdnfonts.com/css/minecraftia');
+
 * {
     margin: 0;
     padding: 0;
@@ -15,21 +16,20 @@ body {
     height: 100vh;
 }
 
-header .desktop {
+header {
     position: fixed;
     width: 100%;
     justify-content: center;
     display: flex;
     gap: 10px;
     align-items: center;
-    display: flexbox;
     height: 80px;
     border-bottom: rgb(59, 59, 59) solid 1px;
     border-top: rgb(59, 59, 59) solid 1px;
     z-index: 100;
 }
 
-header .desktop::before {
+header::before {
     content: "";
     position: absolute;
     width: 100%;
@@ -43,7 +43,7 @@ header .desktop::before {
     z-index: -1;
 }
 
-header .desktop img{
+header img {
     width: 350px;
     height: auto;
     margin: 0px 60px;
@@ -63,18 +63,18 @@ header a {
 }
 
 header a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -5px; 
-  width: 0;
-  height: 2px; 
-  background: #ffffff; 
-  transition: 0.3s;
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background: #ffffff;
+    transition: 0.3s;
 }
 
 header a:hover::after {
-  width: 100%;
+    width: 100%;
 }
 
 header a:hover {
@@ -220,6 +220,7 @@ main {
     text-align: center;
     z-index: 1;
 }
+
 .info::before {
     content: "";
     position: absolute;
@@ -283,7 +284,7 @@ main {
     transition: 0.8s;
 }
 
-.join:hover p{
+.join:hover p {
     opacity: 1;
     margin-top: 150px;
     transition: 0.8s;
@@ -297,12 +298,12 @@ main {
     transform: translateX(-600px);
 }
 
-.join:hover img{
+.join:hover img {
     transition: 0.8s;
     transform: translateX(0px);
 }
 
-.join button{
+.join button {
     position: relative;
     background: none;
     border: none;
@@ -316,7 +317,7 @@ main {
     transition: 0.3s;
 }
 
-.join button::before{
+.join button::before {
     content: "";
     position: absolute;
     width: 100%;
@@ -328,24 +329,24 @@ main {
     padding: 5px -5px;
 }
 
-.join button:hover::before{
+.join button:hover::before {
     height: 100%;
     transition: 0.5s;
 }
 
-.end{
+.end {
     width: 100%;
     height: auto;
 }
 
-.end img{
+.end img {
     width: 800px;
     height: auto;
     filter: brightness(0.5);
     margin-bottom: -250px;
 }
 
-.redes{
+.redes {
     position: relative;
     width: 250px;
     height: auto;
@@ -373,11 +374,12 @@ main {
     z-index: -1;
 }
 
-.redes img{
+.redes img {
     width: 50px;
     transition: 0.3s;
 }
-.redes img:hover{
+
+.redes img:hover {
     transform: scale(1.1);
 }
 
@@ -438,77 +440,43 @@ main {
     }
 }
 
-.header-mobile {
-    display: none;
-}
-
 @media (max-width: 768px) {
-    * {
-        overscroll-behavior-x: none;
-        scrollbar-width: none;
-    }
-
     body {
-        background-position: center;
-        background-size: cover;
+       max-width: 100%;
     }
 
-    .container-2 {
-        display: none;
-    }
-
-
-    header .desktop {
-        display: none;
-    }
-
-    .header-mobile {
-        position: relative;
-        display: flex;
-        flex-direction: column;
+    header {
+        position: fixed;
+        width: 100%;
         justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 90px;
-        background-color: #000000;
-        overflow: hidden;
-        border-bottom: rgb(59, 59, 59) solid 1px;
-        transition: 0.3s;
-    }
-
-    .header-mobile a {
-        transform: translate(0%, 70px);
-    }
-
-    .header-mobile a:not(.main) {
-        font-size: 1.8rem;
-    }
-
-    #header.open {
-        height: 250px;
-    }
-
-    #header.open a:not(.main) {
-        opacity: 1;
-        transform: translateY(20px);
-    }
-
-    .header-mobile .main {
-        opacity: 1;
-        transform: none;
-    }
-
-    .header-top {
-        justify-content: space-between;
-        width: 100%;
         display: flex;
+        gap: 10px;
         align-items: center;
-        transform: translate(40px, 40px);
-        transition: 0.3s;
+        height: 80px;
+        border-bottom: rgb(59, 59, 59) solid 1px;
+        border-top: rgb(59, 59, 59) solid 1px;
+        z-index: 100;
     }
 
-    .header-top.up {
-        transform: translate(40px, 0px);
+    header::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        opacity: 1;
+        backdrop-filter: blur(10px);
+        z-index: -1;
+    }
+
+    .header img {
+        width: 200px;
+        height: auto;
+        margin: 0px 20px;
+
     }
 
     #btn-open {
@@ -606,5 +574,40 @@ main {
     .kits {
         flex-direction: column;
         width: 95%;
+    }
+
+    .join {
+        margin-top: 0px;
+        padding: 0px 0px;
+        display: flexbox;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .join img{
+        width: 300px;
+        height: auto;
+        opacity: 1;
+        transform: translateX(0px);
+    }
+    .join p{
+        font-size: 1rem;
+        opacity: 1;
+        text-align: center;
+        border-top: wheat solid 1px;
+    }
+    .join:hover p{
+        margin-top: 0px;
+    }
+    .join button {
+        font-size: 1rem;
+        padding: 0px;
+    }
+
+    .end img {
+        width: 100%;
+        height: auto;
+        filter: brightness(0.5);
+        margin-bottom: -100px;
     }
 }
