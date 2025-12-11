@@ -4,6 +4,7 @@
 @import url('https://fonts.cdnfonts.com/css/minecraft-title');
 @import url('https://fonts.cdnfonts.com/css/konkhmer-sleokchher');
 @import url('https://fonts.cdnfonts.com/css/minecraftia');
+@import url('https://fonts.cdnfonts.com/css/rubik');
 
 * {
     margin: 0;
@@ -14,50 +15,39 @@
 
 body {
     height: 100vh;
+    background-color: #1e2124;
+    justify-content: center;
 }
 
 header {
-    position: fixed;
+    position: absolute;
     width: 100%;
     justify-content: center;
     display: flex;
     gap: 10px;
     align-items: center;
-    height: 80px;
-    border-bottom: rgb(59, 59, 59) solid 1px;
-    border-top: rgb(59, 59, 59) solid 1px;
-    z-index: 100;
-}
-
-header::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    opacity: 1;
-    backdrop-filter: blur(10px);
-    z-index: -1;
+    height: 110px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0))
 }
 
 header img {
-    width: 350px;
+    width: 200px;
     height: auto;
     margin: 0px 60px;
+    position: absolute;
+    left: 10px;
 }
 
 header a {
     position: relative;
     text-decoration: none;
     font-size: 2rem;
-    font-family: "Inter", sans-serif;
-    font-weight: 800;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
     color: #bcbcbc;
     display: inline-block;
-    transform: translateX(-50px);
+    transform: translateX(380px);
+    margin-left: 20px;
     letter-spacing: 2px;
     transition: 0.3s;
 }
@@ -82,8 +72,10 @@ header a:hover {
 }
 
 main {
-    background-color: rgb(35, 1, 24);
+    width: 100%;
+    height: auto;
 }
+
 
 .container {
     display: flex;
@@ -91,19 +83,22 @@ main {
     align-items: center;
     text-align: center;
     flex-direction: column;
-    height: 100vh;
+    height: auto;
     width: 100%;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url(../img/backgrounds/season4_background.png);
+    background: radial-gradient(circle at center, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(../img/backgrounds/raids_background.png);
     background-position: center;
-    background-size: cover;
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .container h1 {
-    color: #ffe600;
-    font-family: minecraft title;
+    color: #e4e4e4;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.2rem;
+    width: 60%;
+    margin-top: 10px;
     animation: fade-in 2s forwards;
-    text-shadow: #000000 1px 1px 10px;
+    text-shadow: #000000 2px 2px 5px;
 }
 
 .container a {
@@ -116,12 +111,12 @@ main {
     text-shadow: #ff0095 2px 2px 1px;
 }
 
-.container h1::before {
+.line {
     content: "";
     display: block;
     width: 200%;
     margin: 0 auto;
-    border-bottom: 1px solid #ffffff;
+    border-bottom: 1px solid #2600ff;
     animation: esticar 2s forwards;
 }
 
@@ -148,11 +143,11 @@ main {
     cursor: pointer;
     background-color: rgb(207, 207, 207);
     padding: 10px 20px;
-    color: rgb(88, 88, 88);
+    color: rgb(54, 54, 54);
     font-family: minecraftia, sans-serif;
     text-shadow: none;
     animation: none;
-    font-size: 1rem;
+    font-size: 1.2rem;
     border-radius: 0px;
     border: #000000 2px solid;
 }
@@ -165,32 +160,14 @@ main {
 }
 
 #logo {
-    width: 250px;
+    width: 200px;
     height: auto;
     max-width: 60%;
     margin: 20px 20px;
-    margin-top: 300px;
+    margin-top: 350px;
     scale: 1.2;
     cursor: pointer;
     display: inline-block;
-}
-
-.float {
-    animation: floating 3s ease-in-out infinite;
-}
-
-.flip {
-    animation: flip 1s linear forwards;
-}
-
-@keyframes flip {
-    0% {
-        transform: rotateY(0deg);
-    }
-
-    100% {
-        transform: rotateY(360deg);
-    }
 }
 
 #status {
@@ -204,151 +181,9 @@ main {
     display: inline-block;
 }
 
-.info {
-    position: relative;
-    width: 100%;
-    height: auto;
-    padding: 50px 100px;
-    margin-top: 50px;
-    background-color: #000013;
-    border-bottom: rgb(0, 0, 0) 4px solid;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    z-index: 1;
-}
-
-.info::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    filter: brightness(0.7);
-    backdrop-filter: blur(10px);
-    z-index: -1;
-}
-
-.info h1 {
-    color: wheat;
-    font-size: 2.4rem;
-    margin-bottom: 20px;
-    font-family: "Inter", sans-serif;
-    font-weight: 800;
-}
-
-.info p {
-    color: wheat;
-    font-family: "Inter", sans-serif;
-    font-weight: 400;
-    font-size: 1.4rem;
-}
-
-.info button {
-    padding: 20px 80px;
-    font-family: "minecraftia", sans-serif;
-    border: white 3px solid;
-    font-size: 1rem;
-    border-radius: 10px;
-    background-color: #000771;
-    color: white;
-    margin-top: 30px;
-    transition: 0.1s;
-}
-
-.info button:hover {
-    background-color: rgba(0, 0, 0, 0.2);
-}
-
-.join {
-    position: relative;
-    width: 100%;
-    height: auto;
-    display: flex;
-    margin-bottom: 200px;
-}
-
-.join p {
-    margin-top: 0px;
-    font-size: 1.4rem;
-    font-family: "Inter", sans-serif;
-    font-weight: 400;
-    text-align: left;
-    opacity: 0;
-    transition: 0.8s;
-}
-
-.join:hover p {
-    opacity: 1;
-    margin-top: 150px;
-    transition: 0.8s;
-}
-
-.join img {
-    width: 500px;
-    height: auto;
-    filter: brightness(1.4);
-    transition: 0.8s;
-    transform: translateX(-600px);
-}
-
-.join:hover img {
-    transition: 0.8s;
-    transform: translateX(0px);
-}
-
-.join button {
-    position: relative;
-    background: none;
-    border: none;
-    font-family: "Inter", sans-serif;
-    font-weight: 400;
-    padding: 0px 0px;
-    font-size: 1.4rem;
-    color: wheat;
-    cursor: pointer;
-    border-radius: 0px;
-    transition: 0.3s;
-}
-
-.join button::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 0%;
-    background-color: #000662;
-    z-index: -1;
-    transition: 0.5s;
-    border-radius: 5px;
-    padding: 5px -5px;
-}
-
-.join button:hover::before {
-    height: 100%;
-    transition: 0.5s;
-}
-
-.end {
-    width: 100%;
-    height: auto;
-}
-
-.end img {
-    width: 800px;
-    height: auto;
-    filter: brightness(0.5);
-    margin-bottom: -250px;
-}
-
 .redes {
     position: relative;
-    width: 250px;
+    width: 190px;
     height: auto;
     padding: 10px 10px;
     margin-top: 80px;
@@ -375,12 +210,16 @@ main {
 }
 
 .redes img {
-    width: 50px;
+    width: 35px;
     transition: 0.3s;
 }
 
 .redes img:hover {
     transform: scale(1.1);
+}
+
+.mobile {
+    display: none;
 }
 
 @keyframes floating {
@@ -432,64 +271,80 @@ main {
 
 @keyframes glow {
     0% {
-        text-shadow: #ffee00 0 0 0px;
+        text-shadow: #c655ff 0 0 0px;
     }
 
     50% {
-        text-shadow: 0 0 6px #eeff00;
+        text-shadow: 0 0 6px #c655ff;
     }
 }
 
 @media (max-width: 768px) {
     body {
-       max-width: 100%;
+        max-width: 100%;
     }
 
     header {
-        position: fixed;
         width: 100%;
-        justify-content: center;
-        display: flex;
-        gap: 10px;
-        align-items: center;
-        height: 80px;
-        border-bottom: rgb(59, 59, 59) solid 1px;
-        border-top: rgb(59, 59, 59) solid 1px;
-        z-index: 100;
+        height: 100px;
+        gap: 0px;
     }
 
-    header::before {
-        content: "";
+    header img {
+        position: absolute;
+        width: 160px;
+        left: -40px;
+        height: auto;
+    }
+
+    .mobile {
+        display: flex;
+        background: none;
+    }
+
+    #mobile {
+        position: absolute;
+        right: 40px;
+        padding: 10px 10px;
+        background: none;
+        border: none;
+        color: white;
+        font-size: 1.8rem;
+        z-index: 101;
+    }
+
+    aside {
         position: absolute;
         width: 100%;
-        height: 100%;
-        top: 0;
+        height: 100vh;
+        left: 100%;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        background: rgba(31, 27, 39, 0.8);
+        z-index: 100;
+        text-align: center;
+        transition: left 0.3s ease-in-out;
+    }
+
+    .active {
         left: 0;
-        right: 0;
-        bottom: 0;
-        opacity: 1;
-        backdrop-filter: blur(10px);
-        z-index: -1;
+        transition: left 0.3s ease-in-out;
     }
 
-    .header img {
-        width: 200px;
-        height: auto;
-        margin: 0px 20px;
-
-    }
-
-    #btn-open {
-        width: 30px;
-        height: 30px;
-        background: none;
-        transform: translate(-100px, -32px);
-        border: none;
+    aside a {
+        font-size: 2rem;
+        font-family: 'Rubik', sans-serif;
+        font-weight: 700;
+        width: 100%;
+        margin-bottom: 20px;
         color: #ffffff;
-        border-radius: 4px;
-        font-size: 3rem;
-        padding: 20px 10px;
-        cursor: pointer;
+        text-decoration: none;
+        transform: translateY(200px);
+    }
+
+    header a {
+        display: none;
     }
 
     .container {
@@ -505,7 +360,7 @@ main {
 
     .container h1 {
         font-size: 1rem;
-        max-width: 70%;
+        width: 80%;
     }
 
 
@@ -534,80 +389,4 @@ main {
         top: 30px;
     }
 
-
-    footer {
-        margin-top: -10px
-    }
-
-    .info {
-        padding: 40px 20px;
-        margin-top: 20px;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .info h1 {
-        max-width: 100%;
-        font-size: 1.6rem;
-        margin-bottom: 10px;
-    }
-
-    .info p {
-        max-width: 90%;
-        justify-content: center;
-        align-items: center;
-        font-size: 1rem;
-    }
-
-    .info button {
-        padding: 15px 80px;
-        font-size: 1rem;
-    }
-
-    .compras {
-        padding: 40px 20px;
-        margin-top: 50px;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .kits {
-        flex-direction: column;
-        width: 95%;
-    }
-
-    .join {
-        margin-top: 0px;
-        padding: 0px 0px;
-        display: flexbox;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .join img{
-        width: 300px;
-        height: auto;
-        opacity: 1;
-        transform: translateX(0px);
-    }
-    .join p{
-        font-size: 1rem;
-        opacity: 1;
-        text-align: center;
-        border-top: wheat solid 1px;
-    }
-    .join:hover p{
-        margin-top: 0px;
-    }
-    .join button {
-        font-size: 1rem;
-        padding: 0px;
-    }
-
-    .end img {
-        width: 100%;
-        height: auto;
-        filter: brightness(0.5);
-        margin-bottom: -100px;
-    }
 }
